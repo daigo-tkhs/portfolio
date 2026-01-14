@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TripConcierge（旅程管理アプリ）</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="p-work">
+    <header id="header" class="header">
+      <div class="header__logo">
+          <h1>
+            <a href="../">
+              <span class="header__logo-title">Daigo Takahashi</span>
+              <span class="header__logo-sub">Portfolio</span>
+            </a>
+          </h1>
+        </div>
+        <div class="header__hamburger">
+          <i></i>
+        </div>
+        <nav class="header__gnav">
+          <ul class="header__gnav-list">
+            <li class="header__gnav-item"><a href="../#a-profile">PROFILE</a></li>
+            <li class="header__gnav-item"><a href="../#a-skill">SKILL</a></li>
+            <li class="header__gnav-item"><a href="../#a-works">WORKS</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="p-work-firstview">
+        <div class="section-inner">
+          <h2>TripConcierge（旅程管理アプリ）</h2>
+          <div class="p-work-firstview__pict obj-fit-img">
+            <img src="../images/work/02/pict-work02-firstview_pc.png" class="show-pc">
+            <img src="../images/work/02/pict-work02-firstview_sp.png" class="show-sp">
+          </div>
+          <div class="p-work-firstview__text-area">
+            <h3 class="p-work-firstview__text-titile">開発環境</h3>
+            <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / Google Maps API </p>
+            <p class="p-work-firstview__text-link"><a href="https://github.com/daigo-tkhs/TripConcierge" target="_blank">https://github.com/daigo-tkhs/TripConcierge</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="p-work-summary">
+        <div class="section-inner">
+          <ul class="p-work-summary__list">
+            <li class="p-work-summary__item">
+              <h3>概要</h3>
+              <table class="p-work-summary__item-table">
+                <tr>
+                  <th>制作時間</th>
+                  <td>60時間</td>
+                </tr>
+                <tr>
+                  <th>URL</th>
+                  <td><a href="https://travel-shiori.onrender.com" target="_blank">https://travel-shiori.onrender.com</a></td>
+                </tr>
+                <tr>
+                  <th>ID</th>
+                  <td>admin</td>
+                </tr>
+                <tr>
+                  <th>PASS</th>
+                  <td>2222</td>
+                </tr>
+              </table>
+            </li>
+            <li class="p-work-summary__item">
+              <h3>動作テスト</h3>
+              <h4>テスト用アカウント</h4>
+              <table class="p-work-summary__item-table">
+                <tr>
+                  <th>mail</th>
+                  <td>test@test.com</td>
+                </tr>
+                <tr>
+                  <th>PASS</th>
+                  <td>password123</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-work-outline">
+        <div class="section-inner">
+          <div class="heading">
+            <h2>OUTLINE<span>アプリケーションの概要</span></h2>
+          </div>
+          <div class="contents">
+            <div class="p-work-outline__text">
+              <p>
+                「旅行のしおり」をデジタル化し、共有できる旅程管理アプリケーションです。Google Maps APIを活用し、視覚的なルート確認が可能です。
+                <br>
+                主な機能は、ユーザー登録、旅程作成、Googleマップ連携、共同編集機能です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-work-about">
+        <div class="section-inner">
+          <ul class="p-work-about__list">
+            <li class="p-work-about__item">
+              <h3>開発に至った経緯</h3>
+              <div class="p-work-about__item-block">
+                <p>
+                  友人との旅行計画において、LINEのノートやPDFでは情報が分散し、当日のスケジュール確認が煩雑になる課題がありました。
+                </p>
+                <p>
+                  そこで、旅程、持ち物、マップを一元管理し、メンバー全員がリアルタイムで編集・確認できる「デジタルのしおり」があれば、旅行体験がよりスムーズになると考え開発に至りました。
+                </p>
+              </div>
+            </li>
+            <li class="p-work-about__item">
+              <h3>開発で工夫したこと</h3>
+              <div class="p-work-about__item-block p-work-about__item-block-2column">
+                <div class="p-work-about__item-block-pict obj-fit-img">
+                  <img src="../images/work/02/pict-work02-about-devised.png">
+                </div>
+                <div class="p-work-about__item-block-text">
+                  <p>
+                    1つ目はGoogle Maps Platformの導入です。住所を入力するだけでピンが立ち、移動ルートが可視化されるように実装しました。APIキーの管理には環境変数を用い、セキュリティにも配慮しています。
+                  </p>
+                  <p>
+                    2つ目は生成AI活用におけるプロンプトの最適化です。開発や機能実装の補助としてAIを活用しましたが、指示の仕方（プロンプト）次第で出力結果の精度が大きく異なるため、意図した通りの解答が得られるように、指示出しの試行錯誤を繰り返しました。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="p-work-about__item">
+              <h3>今後実装したいと思っていること</h3>
+              <div class="p-work-about__item-block p-work-about__item-block-2column">
+                <div class="p-work-about__item-block-pict obj-fit-img">
+                  <img src="../images/work/02/pict-work02-about-Implementing.png">
+                </div>
+                <div class="p-work-about__item-block-text">
+                  <p>
+                    AWSへのデプロイを予定しています。現在はRenderを使用していますが、より実務に近いインフラ構成（EC2/RDS/S3）での運用を目指しています。
+                  </p>
+                  <p>
+                    また、旅行前にしおりとしてPDFにできる機能や、為替機能の追加も検討しています。
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-work-others">
+        <div class="section-inner">
+          <div class="heading">
+            <h2>OTHERS<span>その他実績</span></h2>
+          </div>
+          <div class="contents">
+            <ul class="p-work-others__list">
+              <li class="p-work-others__item">
+                <div class="p-work-others__item-pict">
+                  <a href="01.html" style="background-image:url('../images/work/01/pict-work01-firstview_pc.png');"></a>
+                </div>
+                <div class="p-work-others__item-text-block">
+                  <h3>FURIMA（フリマアプリ）</h3>
+                  <p>Ruby / Ruby on Rails / MySQL / GitHub / AWS / Visual Studio Code / Trello</p>
+                </div>
+                <div class="p-work-others__item-btn-block">
+                  <a href="01.html" class="button">More</a>
+                </div>
+              </li>
+              <li class="p-work-others__item">
+                <div class="p-work-others__item-pict">
+                  <a href="02.html" style="background-image:url('../images/work/02/pict-work02-firstview_pc.png');"></a>
+                </div>
+                <div class="p-work-others__item-text-block">
+                  <h3>TripConcierge（旅程管理アプリ）</h3>
+                  <p>Ruby / Ruby on Rails / MySQL / Google Maps API</p>
+                </div>
+                <div class="p-work-others__item-btn-block">
+                  <a href="02.html" class="button">More</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer"><p>&copy; Daigo Takahashi.</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/ofi.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>
